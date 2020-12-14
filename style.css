@@ -1,0 +1,84 @@
+body {
+    background-image: url("background1.jpg");
+    background-position: center;
+    background-size: cover;   
+}
+
+#logo  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19%;
+}
+
+#video {
+    display: block;
+    margin: auto;
+}
+
+#rightSide {
+    position: absolute;
+    top: 42px;
+    right: 50px;
+}
+
+#leftSide {
+    position: absolute;
+    top: 42px;
+    left: 50px;
+}
+
+
+#mainBtns {
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border-radius: 7px;
+    font-family: 'Handlee', cursive;
+    text-shadow: 2px 2px 5px rgb(50, 50, 50);
+    font-weight: 900;
+    height: 32px;
+    width: 200px;
+}
+  
+#mainBtns:hover {
+    box-shadow: 0 12px 16px 0 rgb(40, 40, 40),0 17px 50px 0 rgb(40, 40, 40);
+}
+
+
+#slideShowTitle {
+    text-align: center;
+    font-family: 'Handlee', cursive;
+    text-shadow: 4px 4px 5px;
+}
+
+header {
+    text-align: center;
+    padding: 3px;
+    background-color:rgb(255, 255, 255, 0.9);
+    color: white;
+    border-radius: 7px;
+    position: fixed;
+    margin: 0px 9px 0px 0px  ;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: white;
+    border-radius: 7px;
+    font-family: 'Handlee', cursive;
+    color: black;
+    font-weight: 900;
+}
+
+#main {
+    margin-top: 130px ;   
+}
