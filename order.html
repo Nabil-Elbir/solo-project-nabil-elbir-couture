@@ -13,20 +13,36 @@
 
 <body>
 
-    <header>
+    <header class="header">
         <img id='logo' src="logo-black.png">
         
         <div id="leftSide">
             <button id="mainBtn3">HOME</button>
         </div>
-    
         <div id='rightSide'>    
             <button id="mainBtn1">GALLERY</button>
         </div>
     </header>
+    
+    <div id="mainOrder">
+
+    <h2>Please fill out your informations:</h2>
+
+    <form>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="fname">Outfit Name</label><br>
+        <input type="text" id="oname" name="oname"><br>
+        <label for="fname">Size</label><br>
+        <input type="text" id="size" name="size"><br>
+    </form>
+    <button id="mainBtn1">SUBMIT</button>
+</div>
 
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="order.js"></script>
     
 </body>
 
