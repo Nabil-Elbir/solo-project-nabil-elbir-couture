@@ -1,7 +1,23 @@
 body {
-    background-image: url("background1.jpg");
+    background-image: url("background.jpg");
     background-position: center;
-    background-size: cover;   
+    background-size:initial;
+}
+
+.header{
+    position: inherit ;
+    top: 5px;
+}
+
+header {
+    text-align: center;
+    padding: 0px;
+    background-color:rgb(255, 255, 255, 0.9);
+    color: white;
+    border-radius: 7px;
+    position: fixed;
+    margin: 0px 9px 0px 0px;
+    z-index: 10 ;
 }
 
 #logo  {
@@ -28,8 +44,7 @@ body {
     left: 50px;
 }
 
-
-#mainBtns {
+#mainBtn1 {
     background-color: transparent;
     color: black;
     text-align: center;
@@ -47,25 +62,58 @@ body {
     width: 200px;
 }
   
-#mainBtns:hover {
+#mainBtn1:hover {
     box-shadow: 0 12px 16px 0 rgb(40, 40, 40),0 17px 50px 0 rgb(40, 40, 40);
 }
 
+#mainBtn2 {
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border-radius: 7px;
+    font-family: 'Handlee', cursive;
+    text-shadow: 2px 2px 5px rgb(50, 50, 50);
+    font-weight: 900;
+    height: 32px;
+    width: 200px;
+}
+  
+#mainBtn2:hover {
+    box-shadow: 0 12px 16px 0 rgb(40, 40, 40),0 17px 50px 0 rgb(40, 40, 40);
+}
+
+#mainBtn3 {
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border-radius: 7px;
+    font-family: 'Handlee', cursive;
+    text-shadow: 2px 2px 5px rgb(50, 50, 50);
+    font-weight: 900;
+    height: 32px;
+    width: 200px;
+}
+  
+#mainBtn3:hover {
+    box-shadow: 0 12px 16px 0 rgb(40, 40, 40),0 17px 50px 0 rgb(40, 40, 40);
+}
 
 #slideShowTitle {
     text-align: center;
     font-family: 'Handlee', cursive;
     text-shadow: 4px 4px 5px;
-}
-
-header {
-    text-align: center;
-    padding: 3px;
-    background-color:rgb(255, 255, 255, 0.9);
-    color: white;
-    border-radius: 7px;
-    position: fixed;
-    margin: 0px 9px 0px 0px  ;
 }
 
 footer {
@@ -77,8 +125,152 @@ footer {
     font-family: 'Handlee', cursive;
     color: black;
     font-weight: 900;
-}
+} 
 
 #main {
+    position: relative;
     margin-top: 130px ;   
 }
+
+#mainGallery {
+    position: relative;
+    text-align: center;
+    font-family: 'Handlee', cursive;
+    color: rgba(240, 240, 240) ;
+    text-shadow: 4px 4px 5px;
+}
+
+/* CSS of Slideshow */
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 550px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* next & previous btns */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position "next button" */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position "prev button" */
+.prev {
+    left: 0;
+    border-radius: 0px 3px 3px 0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Number 1/6 */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation (I don't understant it, yet, I know that it works and it's needed for what I wanted.) */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+/* Accordion style */
+
+.accordion {
+   background-color: #eee;
+   color: #444;
+   cursor: pointer;
+   padding: 18px;
+   width: 550px;
+   border: none;
+   text-align: left;
+   outline: none;
+   font-size: 15px;
+   transition: 0.4s;   
+}
+  
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+  
+.panel {
+    padding: 0 18px;
+    background-color:#ccc;
+    width: 550px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery / Nabil Elbir - Couture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Patrick+Hand&family=Patrick+Hand+SC&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+  <header class="header">
+    <img id='logo' src="logo-black.png">  
+      <div id="leftSide">
+        <button id="mainBtn3">HOME</button>
+      </div>
+    
+      <div id='rightSide'>    
+        <button id="mainBtn2">ORDER NOW</button>
+      </div>
+  </header>
+
+    <div id='mainGallery'>
+      <h2>Check out our outfits...</h2>
+
+            <!-- Slideshow -->
+            <div class="slideshow-container">
+
+              <!-- images with number and text -->
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="red-riding1.jpg" style="width:100%">
+                <div class="text">NEO RED RIDING HOOD</div>
+              </div>
+
+               <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="red-dress1.jpg" style="width:100%">
+                <div class="text">RED DRESS</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="golden-pinky1.jpg" style="width:100%">
+                <div class="text">GOLDEN PINKY</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="pink-attitude1.jpg" style="width:100%">
+                <div class="text">THE PINK ATTITUDE</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="revisited1.jpg" style="width:100%">
+                <div class="text">REVISITED F&B</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="rainbow1.jpg" style="width:100%">
+                <div class="text">WEDDING DRESS RAINBOW</div>
+              </div>
+
+              <!-- Next and prev btns -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+                
+                <br>
+
+            <!-- The dots -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
+            <br>
+
+            <button class="accordion">NEO RED RIDING HOOD</button>
+            <div class="panel"><br>
+              <img id="myImg" src="red-riding1.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="red-riding2.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="red-riding3.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="red-riding4.jpg" style="width:100%;max-width:100px">
+            </div>
+
+            <button class="accordion">RED DRESS</button>
+            <div class="panel"><br>
+              <img id="myImg" src="red-dress1.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="red-dress2.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="red-dress3.jpg" style="width:100%;max-width:100px">
+            </div>
+
+            <button class="accordion">GOLDEN PINKY</button>
+            <div class="panel"><br>
+              <img id="myImg" src="golden-pinky1.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="golden-pinky2.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="golden-pinky3.jpg" style="width:100%;max-width:100px">
+            </div>
+
+            <button class="accordion">THE PINK ATTITUDE</button>
+            <div class="panel"><br>
+              <img id="myImg" src="pink-attitude1.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="pink-attitude2.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="pink-attitude3.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="pink-attitude4.jpg" style="width:100%;max-width:100px">
+            </div>
+
+            <button class="accordion">REVISITED F&B</button>
+            <div class="panel"><br>
+              <img id="myImg" src="revisited1.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="revisited2.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="revisited3.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="revisited4.jpg" style="width:100%;max-width:100px">
+            </div>
+
+            <button class="accordion">WEDDING DRESS RAINBOW</button>
+            <div class="panel"><br>
+              <img id="myImg" src="rainbow1.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="rainbow2.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="rainbow3.jpg" style="width:100%;max-width:100px">
+              <img id="myImg" src="rainbow4.jpg" style="width:100%;max-width:100px">
+            </div>
+            
+
+      <h2>More is coming soon, wait for it...</h2>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="gallery.js"></script>
+    
+</body>
+
+</html>
